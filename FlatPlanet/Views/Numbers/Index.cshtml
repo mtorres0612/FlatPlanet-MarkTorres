@@ -1,0 +1,14 @@
+﻿@model FlatPlanet.Models.Numbers
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Numbers Application</h2>
+
+@using (@Html.BeginForm())
+{
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <input type="submit" value="Submit" />
+    @ViewBag.Counter
+}
